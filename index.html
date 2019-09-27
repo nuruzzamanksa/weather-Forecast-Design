@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./index.css">
+     <!-- font-awesome cdn */ -->
+    <script src="https://kit.fontawesome.com/9d0fe8e0c3.js" crossorigin="anonymous"></script>
+
+
+    <title>Weather Forcast</title>
+</head>
+<body>
+    <div class="card">
+        <div class="front active">
+            <div class="location">
+                Chittagong, Bangladesh
+
+            </div>
+            <div class="more">
+                <i class="fas fa-info-circle" aria-hidden="true"></i>
+            </div>
+            <div class="weather">
+                <i class="fas fa-cloud-sun-rain" aria-hidden="true"></i>
+                <h1>8<sup>0</sup><br><span>Today</span></h1>
+            </div>
+            <ul class="forecast">
+                <li>
+                    <div class="day">Sunday</div>
+                    <div class="tampareture">9<sup>0</sup></div>
+                    <i class="fa fa-cloud" aria-hidden="true"></i>
+                </li>
+                <li>
+                    <div class="day">Monday</div>
+                    <div class="tampareture">9<sup>0</sup></div>
+                    <i class="fa fa-tint" aria-hidden="true"></i>
+                </li>
+                <li>
+                    <div class="day">Tuesday</div>
+                    <div class="tampareture">9<sup>0</sup></div>
+                    <i class="fa fa-snowflake-o" aria-hidden="true"></i>
+                </li>
+                <li>
+                    <div class="day">Wednesday</div>
+                    <div class="tampareture">9<sup>0</sup></div>
+                    <i class="fa fa-tint" aria-hidden="true"></i>
+                </li>
+                <li>
+                    <div class="day">Thursday</div>
+                    <div class="tampareture">9<sup>0</sup></div>
+                    <i class="fa fa-cloud" aria-hidden="true"></i>
+                </li>
+                <li>
+                    <div class="day">Friday</div>
+                    <div class="tampareture">9<sup>0</sup></div>
+                    <i class="fa fa-cloud" aria-hidden="true"></i>
+                </li>
+                <li>
+                    <div class="day">Saturday</div>
+                    <div class="tampareture">9<sup>0</sup></div>
+                    <i class="fa fa-cloud" aria-hidden="true"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="back">
+            <div class="go-back">
+                <i class="fas fa-arrow-alt-circle-left" aria-hidden="true"></i>
+            </div>
+           <ul class="forecast">
+               <li>
+                   <div class="day">Yesterday</div>
+                   <div class="tampareture">9<sup>0</sup></div>
+                   <i class="fa fa-cloud" aria-hidden="true"></i>
+               </li>
+               <li>
+                   <div class="day">Today</div>
+                   <div class="tampareture">9<sup>0</sup></div>
+                   <i class="fa fa-cloud" aria-hidden="true"></i>
+               </li>
+               <li>
+                   <div class="day">Tomorrow</div>
+                   <div class="tampareture">9<sup>0</sup></div>
+                   <i class="fa fa-cloud" aria-hidden="true"></i>
+               </li>
+               <li>
+                   <div class="day">Wednesday</div>
+                   <div class="tampareture">9<sup>0</sup></div>
+                   <i class="fa fa-cloud" aria-hidden="true"></i>
+               </li>
+               <li>
+                   <div class="day">Thursday</div>
+                   <div class="tampareture">9<sup>0</sup></div>
+                   <i class="fa fa-cloud" aria-hidden="true"></i>
+               </li>
+               <li>
+                   <div class="day">Friday</div>
+                   <div class="tampareture">9<sup>0</sup></div>
+                   <i class="fa fa-cloud" aria-hidden="true"></i>
+               </li>
+               <li>
+                   <div class="day">Saturday</div>
+                   <div class="tampareture">9<sup>0</sup></div>
+                   <i class="fa fa-cloud" aria-hidden="true"></i>
+               </li>
+               <li>
+                   <div class="day">Sunday</div>
+                   <div class="tampareture">9<sup>0</sup></div>
+                   <i class="fa fa-cloud" aria-hidden="true"></i>
+               </li>
+           </ul>
+
+        </div>
+        
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.more').click(function(){
+                $('.back').addClass('active')
+                $('.front').removeClass('active')
+            })
+            $('.go-back').click(function(){
+                $('.back').removeClass('active')
+                $('.front').addClass('active')
+            })
+        })
+    </script>
+</body>
+</html>
